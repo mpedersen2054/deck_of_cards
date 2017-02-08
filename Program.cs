@@ -16,6 +16,9 @@ namespace ConsoleApplication
             System.Console.WriteLine("Player card {0}", p2.fullName);
             System.Console.WriteLine("Dealer card {0}", d1.fullName);
             System.Console.WriteLine("Dealer card {0}", d2.fullName);
+
+            deck.ResetDeck();
+            // deck.Shuffle();
         }
     }
 }

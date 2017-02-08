@@ -12,14 +12,7 @@ namespace ConsoleApplication
         public Deck()
         {
             // iterate over each suit
-            foreach (string suit in suits)
-            {
-                // another loop for each card per suit
-                for (int i = 1; i < 14; i++)
-                {
-                    cards.Add(new Card(suit, i));
-                }
-            }
+            this.ResetDeck();
         }
 
         public void Shuffle()
@@ -53,6 +46,27 @@ namespace ConsoleApplication
             return topCard;
         }
 
-        
+        public void ResetDeck()
+        {
+            this.cards = new List<Card>();
+            // iterate over each suit
+            foreach (string suit in suits)
+            {
+                // another loop for each card per suit
+                for (int i = 1; i < 14; i++)
+                {
+                    this.cards.Add(new Card(suit, i));
+                }
+            }
+
+            // // print out each card in new deck & deck.Count
+            // foreach (Card card in this.cards)
+            // {
+            //     System.Console.WriteLine(card.fullName);
+            // }
+            // System.Console.WriteLine("Cards in deck: {0}", this.cards.Count);
+        }
+
+
     }
 }
