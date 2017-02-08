@@ -24,21 +24,35 @@ namespace ConsoleApplication
 
         public void Shuffle()
         {
-            // List<Card> oldCards = cards;
-            // this.cards = null;
+            // loop over each card, remove it, insert it into
+            // a random 0-51 index of this.cards
             for (int i = 0; i < this.cards.Count; i++)
             {
+                // select card and remove it from list
                 Card currCard = this.cards[i];
                 this.cards.RemoveAt(i);
-                
+                // insert currCard[rand 0-51]
                 int newIdx = rand.Next(0, this.cards.Count);
                 this.cards.Insert(newIdx, currCard);
             }
 
-            foreach (Card card in this.cards)
-            {
-                System.Console.WriteLine(card.fullName);
-            }
+            // // print out each card
+            // foreach (Card card in this.cards)
+            // {
+            //     System.Console.WriteLine(card.fullName);
+            // }
         }
+
+        public Card Deal()
+        {
+            // select the top card, remove it and return it
+            int topIdx = this.cards.Count - 1;
+            Card topCard = this.cards[topIdx];
+            this.cards.RemoveAt(topIdx);
+            System.Console.WriteLine("Cards left in deck: {0}", this.cards.Count);
+            return topCard;
+        }
+
+        
     }
 }
