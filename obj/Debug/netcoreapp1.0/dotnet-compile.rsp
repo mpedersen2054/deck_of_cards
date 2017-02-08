@@ -88,4 +88,5 @@
 --reference:/Users/mattpp/.nuget/packages/System.Xml.ReaderWriter/4.0.11/ref/netstandard1.3/System.Xml.ReaderWriter.dll
 --reference:/Users/mattpp/.nuget/packages/System.Xml.XDocument/4.0.11/ref/netstandard1.3/System.Xml.XDocument.dll
 /Users/mattpp/dv/coding_dojo/cnet/assignments/deck_of_cards_classes/Card.cs
+/Users/mattpp/dv/coding_dojo/cnet/assignments/deck_of_cards_classes/Deck.cs
 /Users/mattpp/dv/coding_dojo/cnet/assignments/deck_of_cards_classes/Program.cs
