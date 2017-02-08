@@ -14,6 +14,10 @@ namespace ConsoleApplication
             // iterate over each suit
             this.ResetDeck();
         }
+        public void GetDeckLen()
+        {
+            System.Console.WriteLine(this.cards.Count);
+        }
 
         public void Shuffle()
         {
@@ -42,7 +46,7 @@ namespace ConsoleApplication
             int topIdx = this.cards.Count - 1;
             Card topCard = this.cards[topIdx];
             this.cards.RemoveAt(topIdx);
-            System.Console.WriteLine("Cards left in deck: {0}", this.cards.Count);
+            // System.Console.WriteLine("Cards left in deck: {0}", this.cards.Count);
             return topCard;
         }
 
@@ -66,7 +70,6 @@ namespace ConsoleApplication
             // }
             // System.Console.WriteLine("Cards in deck: {0}", this.cards.Count);
         }
-
 
     }
 }
