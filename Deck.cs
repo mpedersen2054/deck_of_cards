@@ -11,7 +11,6 @@ namespace ConsoleApplication
         
         public Deck()
         {
-            // iterate over each suit
             this.ResetDeck();
         }
         public void GetDeckLen()
@@ -46,7 +45,6 @@ namespace ConsoleApplication
             int topIdx = this.cards.Count - 1;
             Card topCard = this.cards[topIdx];
             this.cards.RemoveAt(topIdx);
-            // System.Console.WriteLine("Cards left in deck: {0}", this.cards.Count);
             return topCard;
         }
 
@@ -63,12 +61,12 @@ namespace ConsoleApplication
                 }
             }
 
-            // // print out each card in new deck & deck.Count
-            // foreach (Card card in this.cards)
-            // {
-            //     System.Console.WriteLine(card.fullName);
-            // }
-            // System.Console.WriteLine("Cards in deck: {0}", this.cards.Count);
+            // print out each card in new deck & deck.Count
+            foreach (Card card in this.cards)
+            {
+                System.Console.WriteLine(card.fullName);
+            }
+            System.Console.WriteLine("Cards in deck: {0}", this.cards.Count);
         }
 
     }
