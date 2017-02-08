@@ -23,6 +23,7 @@ namespace ConsoleApplication
         {
             try {
                 Card card = this.hand[desiredIdx];
+                this.hand.RemoveAt(desiredIdx);
                 return card;
             } catch { return null; }
         }

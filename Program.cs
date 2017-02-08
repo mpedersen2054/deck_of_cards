@@ -46,6 +46,8 @@ namespace ConsoleApplication
             {
                 System.Console.WriteLine("Card doesnt exist");
             }
+
+            System.Console.WriteLine("Matt has {0} cards.", matt.hand.Count);
             
             
         }
