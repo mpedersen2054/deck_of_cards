@@ -19,6 +19,8 @@ namespace ConsoleApplication
 
         string getStringVal(int val)
         {
+            //In a situation where you are doing something unique for each value
+            //this ends up being a good situation to use a switch statement
             if (val == 1) { return "Ace"; }
             else if (val == 2)  { return "Two"; }
             else if (val == 3)  { return "Three"; }
